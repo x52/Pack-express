@@ -1,0 +1,40 @@
+
+<div *ngIf="commonLayout">
+  <app-common-layout></app-common-layout>
+</div>
+<div *ngIf="customerLayout">
+  <app-customer-layout></app-customer-layout>
+</div>
+<div *ngIf="officerLayout">
+  <app-officer-layout></app-officer-layout>
+</div>
+<div class="container" style="background-image: url('0.jpg'); height:700px;width:1250px">
+  <div *ngIf="flag">
+    <div class="myContent">
+      <div class="col" style="text-align:left">
+        <h3>Welcome !!</h3>
+      </div>
+    </div>
+  </div>
+  <div class="jumbotron" style="text-align:center; margin-top:70px;">
+    <h2>Welcome to Package Express!!</h2>
+    <b style="font-family:'Angsana New'; font-size:26px;color:white">
+		A fast,smart, affordable delievering solution.
+    </b>
+	<div class="jump" style="margin-left:130px;margin-top:200px;"> 
+	<a href="../login/login.component.html" class="button" style="margin-bottom:150px;background-color: #008080;border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 16px"> Login </a>
+  
+  <a href="../sign-up/sign-up.component.html" class="button" style="margin-bottom:200px;background-color: #008080;border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 16px"> Register </a>
+	</div>
+ <!--  <img class="img-responsive" src="src/app/images/logo.jpg" style="height:350px;width:550px;display:block;margin:0px auto;" />-->
+  </div>
+</div>
+

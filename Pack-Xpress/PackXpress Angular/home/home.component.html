@@ -1,0 +1,27 @@
+
+<div *ngIf="commonLayout">
+  <app-common-layout></app-common-layout>
+</div>
+<div *ngIf="customerLayout">
+  <app-customer-layout></app-customer-layout>
+</div>
+<div *ngIf="officerLayout">
+  <app-officer-layout></app-officer-layout>
+</div>b
+<div class="container">
+  <div *ngIf="flag">
+    <div class="myContent">
+      <div class="col" style="text-align:left">
+        <h3>Welcome {{customerName}}</h3>
+      </div>
+    </div>
+  </div>
+  <div class="jumbotron" style="text-align:center; margin-top:70px;">
+    <h2>Welcome to Package Express!!</h2>
+    <p style="font-family:'Angsana New'; font-size:26px;">
+
+    </p>
+    <img class="img-responsive" src="src/app/images/logo.jpg" style="height:350px;width:550px;display:block;margin:0px auto;" />
+  </div>
+</div>
+

@@ -1,0 +1,61 @@
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\ServiceLayer\bin\Debug\netcoreapp2.2\ServiceLayer.deps.json
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\ServiceLayer\bin\Debug\netcoreapp2.2\ServiceLayer.runtimeconfig.json
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\ServiceLayer\bin\Debug\netcoreapp2.2\ServiceLayer.runtimeconfig.dev.json
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\ServiceLayer\bin\Debug\netcoreapp2.2\ServiceLayer.dll
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\ServiceLayer\obj\Debug\netcoreapp2.2\ServiceLayer.csprojAssemblyReference.cache
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\ServiceLayer\obj\Debug\netcoreapp2.2\ServiceLayer.csproj.CoreCompileInputs.cache
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\ServiceLayer\obj\Debug\netcoreapp2.2\ServiceLayer.RazorAssemblyInfo.cache
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\ServiceLayer\obj\Debug\netcoreapp2.2\ServiceLayer.RazorAssemblyInfo.cs
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\ServiceLayer\obj\Debug\netcoreapp2.2\ServiceLayer.AssemblyInfoInputs.cache
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\ServiceLayer\obj\Debug\netcoreapp2.2\ServiceLayer.AssemblyInfo.cs
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\ServiceLayer\obj\Debug\netcoreapp2.2\ServiceLayer.RazorTargetAssemblyInfo.cache
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\ServiceLayer\bin\Debug\netcoreapp2.2\ServiceLayer.pdb
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\ServiceLayer\obj\Debug\netcoreapp2.2\ServiceLayer.dll
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\ServiceLayer\obj\Debug\netcoreapp2.2\ServiceLayer.pdb
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\ServiceLayer\bin\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.dll
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\ServiceLayer\bin\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.dll
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\ServiceLayer\bin\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.pdb
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\ServiceLayer\bin\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.pdb
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\ServiceLayer\obj\Debug\netcoreapp2.2\ServiceLayer.csproj.CopyComplete
+D:\FA4_Project\Infosys.PackXpress\ServiceLayer\bin\Debug\netcoreapp2.2\ServiceLayer.deps.json
+D:\FA4_Project\Infosys.PackXpress\ServiceLayer\bin\Debug\netcoreapp2.2\ServiceLayer.runtimeconfig.json
+D:\FA4_Project\Infosys.PackXpress\ServiceLayer\bin\Debug\netcoreapp2.2\ServiceLayer.runtimeconfig.dev.json
+D:\FA4_Project\Infosys.PackXpress\ServiceLayer\bin\Debug\netcoreapp2.2\ServiceLayer.dll
+D:\FA4_Project\Infosys.PackXpress\ServiceLayer\bin\Debug\netcoreapp2.2\ServiceLayer.pdb
+D:\FA4_Project\Infosys.PackXpress\ServiceLayer\bin\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.dll
+D:\FA4_Project\Infosys.PackXpress\ServiceLayer\bin\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.dll
+D:\FA4_Project\Infosys.PackXpress\ServiceLayer\bin\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.pdb
+D:\FA4_Project\Infosys.PackXpress\ServiceLayer\bin\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.pdb
+D:\FA4_Project\Infosys.PackXpress\ServiceLayer\obj\Debug\netcoreapp2.2\ServiceLayer.csprojAssemblyReference.cache
+D:\FA4_Project\Infosys.PackXpress\ServiceLayer\obj\Debug\netcoreapp2.2\ServiceLayer.csproj.CoreCompileInputs.cache
+D:\FA4_Project\Infosys.PackXpress\ServiceLayer\obj\Debug\netcoreapp2.2\ServiceLayer.RazorAssemblyInfo.cache
+D:\FA4_Project\Infosys.PackXpress\ServiceLayer\obj\Debug\netcoreapp2.2\ServiceLayer.RazorAssemblyInfo.cs
+D:\FA4_Project\Infosys.PackXpress\ServiceLayer\obj\Debug\netcoreapp2.2\ServiceLayer.AssemblyInfoInputs.cache
+D:\FA4_Project\Infosys.PackXpress\ServiceLayer\obj\Debug\netcoreapp2.2\ServiceLayer.AssemblyInfo.cs
+D:\FA4_Project\Infosys.PackXpress\ServiceLayer\obj\Debug\netcoreapp2.2\ServiceLayer.RazorTargetAssemblyInfo.cache
+D:\FA4_Project\Infosys.PackXpress\ServiceLayer\obj\Debug\netcoreapp2.2\ServiceLayer.csproj.CopyComplete
+D:\FA4_Project\Infosys.PackXpress\ServiceLayer\obj\Debug\netcoreapp2.2\ServiceLayer.dll
+D:\FA4_Project\Infosys.PackXpress\ServiceLayer\obj\Debug\netcoreapp2.2\ServiceLayer.pdb
+Z:\FA4_Project\Infosys.PackXpress\ServiceLayer\bin\Debug\netcoreapp2.2\appsettings.Development.json
+Z:\FA4_Project\Infosys.PackXpress\ServiceLayer\bin\Debug\netcoreapp2.2\appsettings.json
+Z:\FA4_Project\Infosys.PackXpress\ServiceLayer\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+Z:\FA4_Project\Infosys.PackXpress\ServiceLayer\bin\Debug\netcoreapp2.2\ServiceLayer.deps.json
+Z:\FA4_Project\Infosys.PackXpress\ServiceLayer\bin\Debug\netcoreapp2.2\ServiceLayer.runtimeconfig.json
+Z:\FA4_Project\Infosys.PackXpress\ServiceLayer\bin\Debug\netcoreapp2.2\ServiceLayer.runtimeconfig.dev.json
+Z:\FA4_Project\Infosys.PackXpress\ServiceLayer\bin\Debug\netcoreapp2.2\ServiceLayer.dll
+Z:\FA4_Project\Infosys.PackXpress\ServiceLayer\bin\Debug\netcoreapp2.2\ServiceLayer.pdb
+Z:\FA4_Project\Infosys.PackXpress\ServiceLayer\bin\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.dll
+Z:\FA4_Project\Infosys.PackXpress\ServiceLayer\bin\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.dll
+Z:\FA4_Project\Infosys.PackXpress\ServiceLayer\bin\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.pdb
+Z:\FA4_Project\Infosys.PackXpress\ServiceLayer\bin\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.pdb
+Z:\FA4_Project\Infosys.PackXpress\ServiceLayer\obj\Debug\netcoreapp2.2\ServiceLayer.csprojAssemblyReference.cache
+Z:\FA4_Project\Infosys.PackXpress\ServiceLayer\obj\Debug\netcoreapp2.2\ServiceLayer.csproj.CoreCompileInputs.cache
+Z:\FA4_Project\Infosys.PackXpress\ServiceLayer\obj\Debug\netcoreapp2.2\ServiceLayer.RazorAssemblyInfo.cache
+Z:\FA4_Project\Infosys.PackXpress\ServiceLayer\obj\Debug\netcoreapp2.2\ServiceLayer.RazorAssemblyInfo.cs
+Z:\FA4_Project\Infosys.PackXpress\ServiceLayer\obj\Debug\netcoreapp2.2\ServiceLayer.AssemblyInfoInputs.cache
+Z:\FA4_Project\Infosys.PackXpress\ServiceLayer\obj\Debug\netcoreapp2.2\ServiceLayer.AssemblyInfo.cs
+Z:\FA4_Project\Infosys.PackXpress\ServiceLayer\obj\Debug\netcoreapp2.2\ServiceLayer.RazorTargetAssemblyInfo.cache
+Z:\FA4_Project\Infosys.PackXpress\ServiceLayer\obj\Debug\netcoreapp2.2\ServiceLayer.csproj.CopyComplete
+Z:\FA4_Project\Infosys.PackXpress\ServiceLayer\obj\Debug\netcoreapp2.2\ServiceLayer.dll
+Z:\FA4_Project\Infosys.PackXpress\ServiceLayer\obj\Debug\netcoreapp2.2\ServiceLayer.pdb
+Z:\FA4_Project\Infosys.PackXpress\ServiceLayer\obj\Debug\netcoreapp2.2\ServiceLayer.genruntimeconfig.cache

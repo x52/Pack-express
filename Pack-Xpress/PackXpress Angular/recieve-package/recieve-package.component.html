@@ -1,0 +1,45 @@
+<div *ngIf="commonLayout">
+  <app-common-layout></app-common-layout>
+</div>
+<div *ngIf="customerLayout">
+  <app-customer-layout></app-customer-layout>
+</div>
+<div *ngIf="officerLayout">
+  <app-officer-layout></app-officer-layout>
+</div>
+
+<div class="container">
+  <div class="table-responsive">
+    <table class="table" style="border:5px solid rgba(220,230,242,1);">
+      <tr style="background-color:rgba(220,230,242,1); font-size:12pt">
+        <th>AWB Number</th>
+        <th>Customer Name</th>
+        <th>From Loction</th>
+        <th>To Location</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+      <tr *ngFor="let package of packages" style="background-color:aliceblue; color:rebeccapurple">
+
+        <td>{{package.AWBNumber}}</td>
+        <td>{{package.customerName}}</td>
+        <td>{{package.fromCity}}, {{package.fromPincode}}</td>
+        <td>{{package.toBuildingNumber}}, {{package.toStreetNumber}}, {{package.toLocality}}, {{package.toCity}}, {{package.toPincode}}</td>
+        <td>{{package.status}}</td>
+        <td style="text-align:center" *ngIf="package.status==null">
+          <button title="Picked Up" (click)="updateStatus(package.packageNumber,'Picked Up')" class="btn">Picked Up</button>&nbsp;
+          <button title="Pickup failed" (click)="updateStatus(package.packageNumber,'Failed')" class="btn">Pickup Failed</button>
+        </td>
+        <td style="text-align:center" *ngIf="package.status=='Picked Up'">
+          <button title="Delivered" (click)="updateStatus(package.packageNumber,'Success')" class="btn">Delivered</button>&nbsp;
+          <button title="Not Delivered" (click)="updateStatus(package.packageNumber,'Not Delivered')" class="btn">Not Delivered</button>
+        </td>
+
+      </tr>
+    </table>
+  </div>
+</div>
+
+
+
+

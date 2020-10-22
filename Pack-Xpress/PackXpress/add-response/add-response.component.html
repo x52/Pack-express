@@ -1,0 +1,34 @@
+<div *ngIf="commonLayout">
+  <app-common-layout></app-common-layout>
+</div>
+<div *ngIf="customerLayout">
+  <app-customer-layout></app-customer-layout>
+</div>
+<div *ngIf="officerLayout">
+  <app-officer-layout></app-officer-layout>
+</div>
+
+
+
+
+  <div class="container">
+    <div class="table-responsive">
+      <table class="table" style="border:5px solid rgba(220,230,242,1);">
+        <tr style="background-color:rgba(220,230,242,1); font-size:12pt">
+          <th>Customer EmailId</th>
+          <th>Type</th>
+          <th>Comment</th>
+          <th>Response</th>
+        </tr>
+        <tr *ngFor="let comment of commListt" style="background-color:aliceblue; color:rebeccapurple">
+          <td>{{comment.emailId}}</td>
+          <td>{{comment.type}}</td>
+          <td>{{comment.comment}}</td>
+          <td><textarea type="text" name="response" #response="ngModel" [ngModel]="comment.response" ngModel class="form-control qkinput" rows="4" cols="40" required></textarea></td>
+          <td style="text-align:center">
+            <button title="Submit Response" (click)="SubmitResponse(comment,response.value)" class="btn">Submit Response</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>

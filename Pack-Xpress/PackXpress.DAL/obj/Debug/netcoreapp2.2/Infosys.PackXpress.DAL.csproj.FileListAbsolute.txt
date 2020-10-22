@@ -1,0 +1,45 @@
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\Infosys.PackXpress.DAL\bin\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.deps.json
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\Infosys.PackXpress.DAL\bin\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.dll
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\Infosys.PackXpress.DAL\obj\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\Infosys.PackXpress.DAL\obj\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.AssemblyInfoInputs.cache
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\Infosys.PackXpress.DAL\obj\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.AssemblyInfo.cs
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\Infosys.PackXpress.DAL\bin\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.runtimeconfig.json
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\Infosys.PackXpress.DAL\bin\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.runtimeconfig.dev.json
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\Infosys.PackXpress.DAL\bin\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.pdb
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\Infosys.PackXpress.DAL\obj\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.dll
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\Infosys.PackXpress.DAL\obj\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.pdb
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\Infosys.PackXpress.DAL\obj\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.csprojAssemblyReference.cache
+C:\Users\Ashut\OneDrive\Documents\f4 vg\Infosys.PackXpress - Copy\Infosys.PackXpress.DAL\bin\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.deps.json
+C:\Users\Ashut\OneDrive\Documents\f4 vg\Infosys.PackXpress - Copy\Infosys.PackXpress.DAL\bin\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.runtimeconfig.json
+C:\Users\Ashut\OneDrive\Documents\f4 vg\Infosys.PackXpress - Copy\Infosys.PackXpress.DAL\bin\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.runtimeconfig.dev.json
+C:\Users\Ashut\OneDrive\Documents\f4 vg\Infosys.PackXpress - Copy\Infosys.PackXpress.DAL\bin\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.dll
+C:\Users\Ashut\OneDrive\Documents\f4 vg\Infosys.PackXpress - Copy\Infosys.PackXpress.DAL\bin\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.pdb
+C:\Users\Ashut\OneDrive\Documents\f4 vg\Infosys.PackXpress - Copy\Infosys.PackXpress.DAL\obj\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.csprojAssemblyReference.cache
+C:\Users\Ashut\OneDrive\Documents\f4 vg\Infosys.PackXpress - Copy\Infosys.PackXpress.DAL\obj\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Ashut\OneDrive\Documents\f4 vg\Infosys.PackXpress - Copy\Infosys.PackXpress.DAL\obj\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.AssemblyInfoInputs.cache
+C:\Users\Ashut\OneDrive\Documents\f4 vg\Infosys.PackXpress - Copy\Infosys.PackXpress.DAL\obj\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.AssemblyInfo.cs
+C:\Users\Ashut\OneDrive\Documents\f4 vg\Infosys.PackXpress - Copy\Infosys.PackXpress.DAL\obj\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.dll
+C:\Users\Ashut\OneDrive\Documents\f4 vg\Infosys.PackXpress - Copy\Infosys.PackXpress.DAL\obj\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.pdb
+D:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.DAL\bin\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.deps.json
+D:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.DAL\bin\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.runtimeconfig.json
+D:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.DAL\bin\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.runtimeconfig.dev.json
+D:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.DAL\bin\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.dll
+D:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.DAL\bin\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.pdb
+D:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.DAL\obj\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.csprojAssemblyReference.cache
+D:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.DAL\obj\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.csproj.CoreCompileInputs.cache
+D:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.DAL\obj\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.AssemblyInfoInputs.cache
+D:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.DAL\obj\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.AssemblyInfo.cs
+D:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.DAL\obj\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.dll
+D:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.DAL\obj\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.pdb
+Z:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.DAL\bin\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.deps.json
+Z:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.DAL\bin\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.runtimeconfig.json
+Z:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.DAL\bin\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.runtimeconfig.dev.json
+Z:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.DAL\bin\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.dll
+Z:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.DAL\bin\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.pdb
+Z:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.DAL\obj\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.csprojAssemblyReference.cache
+Z:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.DAL\obj\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.csproj.CoreCompileInputs.cache
+Z:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.DAL\obj\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.AssemblyInfoInputs.cache
+Z:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.DAL\obj\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.AssemblyInfo.cs
+Z:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.DAL\obj\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.dll
+Z:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.DAL\obj\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.pdb
+Z:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.DAL\obj\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.genruntimeconfig.cache

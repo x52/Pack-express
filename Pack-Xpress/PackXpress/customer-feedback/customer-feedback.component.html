@@ -1,0 +1,70 @@
+
+<div *ngIf="commonLayout">
+  <app-common-layout></app-common-layout>
+</div>
+<div *ngIf="customerLayout">
+  <app-customer-layout></app-customer-layout>
+</div>
+<div *ngIf="officerLayout">
+  <app-officer-layout></app-officer-layout>
+</div>
+
+
+
+
+
+
+
+
+<div class="myContent">
+  <div class="container">
+    <form #CustomerFeedbackForm="ngForm" (ngSubmit)="submitFeedback(CustomerFeedbackForm)">
+      <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+          <h4 style="text-align:center">Feedback Form</h4>
+          <h6 style="text-align:right;color:dimgrey;font-size:small">All fields are mandatory</h6>
+
+          <div class="form-group">
+            <div class="col" style="text-align:left">
+              <label>Feedback type</label>
+            </div>
+            <div class="col-md-2">
+              <select name="typedrop"  #typedrop ngModel>
+                <option value="" autofocus>--select--</option>
+                <option value="Appreciation" >Appreciation</option>
+                <option value="Feedback">Feedback</option>
+                <option value="Request">Request</option>
+
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col" style="text-align:left">
+              <label>Comment</label>
+            </div>
+            <div class="col; input-group">
+              <textarea type="text" name="comment" #comment="ngModel" ngModel class="form-control qkinput" rows="4" cols="40" required></textarea>
+
+            </div>
+            <div *ngIf="comment.errors && (comment.dirty || comment.touched)" style="text-align:left; padding-top:5px; color:red;">
+              <div [hidden]="!comment.errors.required">
+                <p>&nbsp;Comment is mandatory</p>
+              </div>
+              
+            </div>
+          </div>
+          
+          
+          
+          <div class="form-group" style="text-align:left">
+            <button type="submit" [disabled]="!CustomerFeedbackForm.form.valid" class="btn">Add</button> &nbsp;&nbsp;
+            <a routerLink="/home">Cancel</a>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+

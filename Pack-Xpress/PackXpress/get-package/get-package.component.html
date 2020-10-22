@@ -1,0 +1,466 @@
+<div *ngIf="commonLayout">
+  <app-common-layout></app-common-layout>
+</div>
+<div *ngIf="customerLayout">
+  <app-customer-layout></app-customer-layout>
+</div>
+<div *ngIf="officerLayout">
+  <app-officer-layout></app-officer-layout>
+</div>
+
+
+<div class="myContent">
+  <div class="container">
+    <form #CheckAvailabilityForm="ngForm" (ngSubmit)="checkAvailability(CheckAvailabilityForm)">
+      <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+          <h4 style="text-align:center">Check service Availability</h4>
+          <h6 style="text-align:right;color:dimgrey;font-size:small">All fields are mandatory</h6>
+          <div class="form-group">
+            <div class="col" style="text-align:left">
+              <label>Source Pin Code</label>
+            </div>
+            <div class="col; input-group">
+              <input type="text" name="sourcePinCode" #sourcePinCode="ngModel" ngModel class="form-control qkinput" pattern="^[1-9][0-9]{5}$" maxlength="6" required>
+            </div>
+            <div *ngIf="sourcePinCode.errors && (sourcePinCode.dirty || sourcePinCode.touched)" style="text-align:left; padding-top:5px; color:red;">
+              <div [hidden]="!sourcePinCode.errors.required">
+                <p style="color:red">&nbsp;Source Pincode is mandatory</p>
+              </div>
+              <div [hidden]="!sourcePinCode.errors.pattern">
+                <p style="color:red">&nbsp;Invalid Pincode</p>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col" style="text-align:left">
+              <label>Destination Pin Code</label>
+            </div>
+            <div class="col; input-group">
+              <input type="text" name="destinationPinCode" #destinationPinCode="ngModel" ngModel class="form-control qkinput" maxlength="6" pattern="^[1-9][0-9]{5}$" required>
+            </div>
+            <div *ngIf="(sourcePinCode.value==destinationPinCode.value) && (destinationPinCode.dirty || destinationPinCode.touched)" style="color:red">
+              <p style="color:red">&nbsp;Source and destination PinCode cannot be same</p>
+            </div>
+            <div *ngIf="destinationPinCode.errors && (destinationPinCode.dirty || destinationPinCode.touched)" style="text-align:left; padding-top:5px; color:red;">
+              <div [hidden]="!destinationPinCode.errors.required">
+                <p style="color:red">&nbsp;Destination PinCode is mandatory</p>
+              </div>
+              <div [hidden]="!destinationPinCode.errors.pattern">
+                <p style="color:red">&nbsp;Invalid Pincode</p>
+              </div>
+            </div>
+          </div>
+          <div class="form-group" style="text-align:left">
+            <button type="submit" [disabled]="!CheckAvailabilityForm.form.valid" class="btn">Check Availability</button> &nbsp;&nbsp;
+            <a routerLink="/home">Cancel</a>
+          </div>
+          <!--<div class="form-group" style="text-align:left">
+            <div *ngIf="flag">
+              <p style="color:green">&nbsp;Service is Available</p>
+            </div>
+          </div>-->
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div *ngIf="showMsg">
+  <div class="myContent">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <div class="col" style="text-align:left">
+              <div *ngIf="flag">
+                <label style="color:green">{{message}}</label>
+              </div>
+              <div *ngIf="!flag">
+                <label style="color:red">{{message}}</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="flag">
+  <div class="myContent">
+    <div class="container-fluid">
+      <form #GetParcelForm="ngForm" (ngSubmit)="GetParcel(GetParcelForm)">
+        <div class="row">
+          <div class="col-md-4">
+          </div>
+          <div class="col-md-4">
+            <h5 style="text-align:center">Get Parcel</h5>
+            <h6 style="text-align:right;color:dimgrey;font-size:small">All fields are mandatory</h6>
+            <div class="form-group">
+              <div class="col" style="text-align:left">
+                <label>Shipment Type</label>
+                <span class="col-md-2">
+                  <select name="ShipmentType" #ShipmentType ngModel>
+                    <option value="" autofocus>--select--</option>
+                    <option value="Heavy">Heavy</option>
+                    <option value="Perishable">Perishable</option>
+                    <option value="Fragile">Fragile</option>
+                  </select>
+                </span>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col" style="text-align:left">
+                <label>Dimensions (in m):</label>
+              </div>
+              <div class="col; input-group">
+                <input type="number" name="length" #length="ngModel" ngModel class="form-control qkinput" required>
+                <span> L x </span>
+                <input type="number" name="breadth" #breadth="ngModel" ngModel class="form-control qkinput" required>
+                <span> B x </span>
+                <input type="number" name="height" #height="ngModel" ngModel class="form-control qkinput" required>
+                <span> H </span>
+              </div>
+              <div *ngIf="length.errors && (length.dirty || length.touched)" style="text-align:left; padding-top:5px; color:red;">
+                <div [hidden]="!length.errors.required">
+                  <div style="color:red">&nbsp;Length is mandatory</div>
+                </div>
+              </div>
+              <div *ngIf="(length.dirty || length.touched)" style="text-align:left; padding-top:5px; color:red;">
+                <div [hidden]="length.value!=0">
+                  <div style="color:red">&nbsp;Length cannot be Zero</div>
+                </div>
+              </div>
+              <div *ngIf="breadth.errors && (breadth.dirty || breadth.touched)" style="text-align:left; padding-top:5px; color:red;">
+                <div [hidden]="!breadth.errors.required">
+                  <div style="color:red">&nbsp;Breadth is mandatory</div>
+                </div>
+              </div>
+              <div *ngIf="(breadth.dirty || breadth.touched)" style="text-align:left; padding-top:5px; color:red;">
+                <div [hidden]="breadth.value!=0">
+                  <div style="color:red">&nbsp;Breadth cannot be Zero</div>
+                </div>
+              </div>
+              <div *ngIf="height.errors && (height.dirty || height.touched)" style="text-align:left; padding-top:5px; color:red;">
+                <div [hidden]="!height.errors.required">
+                  <div style="color:red">&nbsp;Height is mandatory</div>
+                </div>
+              </div>
+              <div *ngIf="(height.dirty || height.touched)" style="text-align:left; padding-top:5px; color:red;">
+                <div [hidden]="height.value!=0">
+                  <div style="color:red">&nbsp;Height cannot be Zero</div>
+                </div>
+              </div>
+
+            </div>
+            <div class="form-group">
+              <div class="col" style="text-align:left">
+                <label>Approx. Weight (in Kg):</label>
+              </div>
+              <div class="col; input-group">
+                <input type="number" name="weight" #weight="ngModel" ngModel class="form-control qkinput" required>
+                <span *ngIf="weight.errors && (weight.dirty || weight.touched)" style="text-align:left; padding-top:5px; color:red;">
+                  <span [hidden]="!weight.errors.required">
+                    <span style="color:red">&nbsp;Weight is mandatory</span>
+                  </span>
+                </span>
+                <span *ngIf="(weight.dirty || weight.touched)" style="text-align:left; padding-top:5px; color:red;">
+                  <span [hidden]="weight.value!=0">
+                    <span style="color:red">&nbsp;Weight cannot be Zero</span>
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col" style="text-align:left">
+                <label>Deliver Type</label>
+                <span class="col-md-2">
+                  <select name="Deliverytype" #Deliverytype ngModel>
+                    <option value="" autofocus>--select--</option>
+                    <option value="Overnight">Overnight</option>
+                    <option value="Express">Express</option>
+                    <option value="Standard">Standard</option>
+                  </select>
+                </span>
+              </div>
+            </div>
+
+
+            <div class="form-group">
+              <div class="col" style="text-align:left">
+                <label>Sender's Address</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col" style="text-align:left">
+                <label>Building Number</label>
+              </div>
+              <div class="col; input-group">
+                <input type="text" name="fromBuildingNumber" #fromBuildingNumber="ngModel" ngModel class="form-control qkinput" pattern="^[a-zA-Z0-9 ]*$" required>
+
+                <span *ngIf="fromBuildingNumber.errors && (fromBuildingNumber.dirty || fromBuildingNumber.touched)" style="text-align:left; padding-top:5px; color:red;">
+                  <span [hidden]="!fromBuildingNumber.errors.required">
+                    <span style="color:red">&nbsp;Building Number is mandatory</span>
+                  </span>
+                  <span [hidden]="!fromBuildingNumber.errors.pattern">
+                    <span style="color:red">&nbsp;Invalid Building Number</span>
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col" style="text-align:left">
+                <label>Street Number</label>
+              </div>
+              <div class="col; input-group">
+                <input type="text" name="fromStreetNumber" #fromStreetNumber="ngModel" ngModel class="form-control qkinput" pattern="^[a-zA-Z0-9 ]*$" required>
+
+                <span *ngIf="fromStreetNumber.errors && (fromStreetNumber.dirty || fromStreetNumber.touched)" style="text-align:left; padding-top:5px; color:red;">
+                  <span [hidden]="!fromStreetNumber.errors.required">
+                    <span style="color:red">&nbsp;Street Number is mandatory</span>
+                  </span>
+                  <span [hidden]="!fromStreetNumber.errors.pattern">
+                    <span style="color:red">&nbsp;Invalid Street Number</span>
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col" style="text-align:left">
+                <label>Locality</label>
+              </div>
+              <div class="col; input-group">
+                <input type="text" name="fromLocality" #fromLocality="ngModel" ngModel class="form-control qkinput" pattern="^[a-zA-Z ]*$" required>
+
+                <span *ngIf="fromLocality.errors && (fromLocality.dirty || fromLocality.touched)" style="text-align:left; padding-top:5px; color:red;">
+                  <span [hidden]="!fromLocality.errors.required">
+                    <span style="color:red">&nbsp;Locality is mandatory</span>
+                  </span>
+                  <span [hidden]="!fromLocality.errors.pattern">
+                    <span style="color:red">&nbsp;Invalid Locality</span>
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col" style="text-align:left">
+                <label>City</label>
+              </div>
+              <div class="col; input-group">
+                <input type="text" name="fromCity" #fromCity="ngModel" ngModel class="form-control qkinput" pattern="^[a-zA-Z]*$" required>
+
+                <span *ngIf="fromCity.errors && (fromCity.dirty || fromCity.touched)" style="text-align:left; padding-top:5px; color:red;">
+                  <span [hidden]="!fromCity.errors.required">
+                    <span style="color:red">&nbsp;City is mandatory</span>
+                  </span>
+                  <span [hidden]="!fromCity.errors.pattern">
+                    <span style="color:red">&nbsp;Invalid City</span>
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col" style="text-align:left">
+                <label>Pin Code</label>
+              </div>
+              <div class="col; input-group">
+                <input type="text" name="fromPincode" #fromPincode="ngModel" ngModel class="form-control qkinput" pattern="^[1-9][0-9]{5}$" maxlength="6" required>
+
+                <span *ngIf="fromPincode.errors && (fromPincode.dirty || fromPincode.touched)" style="text-align:left; padding-top:5px; color:red;">
+                  <span [hidden]="!fromPincode.errors.required">
+                    <span style="color:red">&nbsp;Pin Code is mandatory</span>
+                  </span>
+                  <span [hidden]="!fromPincode.errors.pattern">
+                    <span style="color:red">&nbsp;Invalid Pin code</span>
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col" style="text-align:left">
+                <label>Contact Number</label>
+              </div>
+              <div class="col; input-group">
+                <input type="text" name="fromContactNumber" #fromContactNumber="ngModel" ngModel class="form-control qkinput" maxlength="10" pattern="^[0-9]{10}$" size="10" required>
+
+                <span *ngIf="fromContactNumber.errors && (fromContactNumber.dirty || fromContactNumber.touched)" style="text-align:left; padding-top:5px; color:red;">
+                  <span [hidden]="!fromContactNumber.errors.required">
+                    <span>&nbsp;Contact Number is mandatory</span>
+                  </span>
+                  <span [hidden]="!fromContactNumber.errors.pattern">
+                    <span>&nbsp;Invalid Contact Number</span>
+                  </span>
+                </span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col" style="text-align:left">
+                <label>Reciever's Address</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col" style="text-align:left">
+                <label>Building Number</label>
+              </div>
+              <div class="col; input-group">
+                <input type="text" name="toBuildingNumber" #toBuildingNumber="ngModel" ngModel class="form-control qkinput" pattern="^[a-zA-Z0-9 ]*$" required>
+
+                <span *ngIf="toBuildingNumber.errors && (toBuildingNumber.dirty || toBuildingNumber.touched)" style="text-align:left; padding-top:5px; color:red;">
+                  <span [hidden]="!toBuildingNumber.errors.required">
+                    <span style="color:red">&nbsp;Building Number is mandatory</span>
+                  </span>
+                  <span [hidden]="!toBuildingNumber.errors.pattern">
+                    <span style="color:red">&nbsp;Invalid Building Number</span>
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col" style="text-align:left">
+                <label>Street Number</label>
+              </div>
+              <div class="col; input-group">
+                <input type="text" name="toStreetNumber" #toStreetNumber="ngModel" ngModel class="form-control qkinput" pattern="^[a-zA-Z0-9 ]*$" required>
+
+                <span *ngIf="toStreetNumber.errors && (toStreetNumber.dirty || toStreetNumber.touched)" style="text-align:left; padding-top:5px; color:red;">
+                  <span [hidden]="!toStreetNumber.errors.required">
+                    <span style="color:red">&nbsp;Street Number is mandatory</span>
+                  </span>
+                  <span [hidden]="!toStreetNumber.errors.pattern">
+                    <span style="color:red">&nbsp;Invalid Street Number</span>
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col" style="text-align:left">
+                <label>Locality</label>
+              </div>
+              <div class="col; input-group">
+                <input type="text" name="toLocality" #toLocality="ngModel" ngModel class="form-control qkinput" pattern="^[a-zA-Z ]*$" required>
+
+                <span *ngIf="toLocality.errors && (toLocality.dirty || toLocality.touched)" style="text-align:left; padding-top:5px; color:red;">
+                  <span [hidden]="!toLocality.errors.required">
+                    <span style="color:red">&nbsp;Locality is mandatory</span>
+                  </span>
+                  <span [hidden]="!toLocality.errors.pattern">
+                    <span style="color:red">&nbsp;Invalid Locality</span>
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col" style="text-align:left">
+                <label>City</label>
+              </div>
+              <div class="col; input-group">
+                <input type="text" name="toCity" #toCity="ngModel" ngModel class="form-control qkinput" pattern="^[a-zA-Z]*$" required>
+
+                <span *ngIf="toCity.errors && (toCity.dirty || toCity.touched)" style="text-align:left; padding-top:5px; color:red;">
+                  <span [hidden]="!toCity.errors.required">
+                    <span style="color:red">&nbsp;City is mandatory</span>
+                  </span>
+                  <span [hidden]="!toCity.errors.pattern">
+                    <span style="color:red">&nbsp;Invalid City</span>
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col" style="text-align:left">
+                <label>Pin Code</label>
+              </div>
+              <div class="col; input-group">
+                <input type="text" name="toPincode" #toPincode="ngModel" ngModel class="form-control qkinput" pattern="^[1-9][0-9]{5}$" maxlength="6" required>
+
+                <span *ngIf="toPincode.errors && (toPincode.dirty || toPincode.touched)" style="text-align:left; padding-top:5px; color:red;">
+                  <span [hidden]="!toPincode.errors.required">
+                    <span style="color:red">&nbsp;Pin Code is mandatory</span>
+                  </span>
+                  <span [hidden]="!toPincode.errors.pattern">
+                    <span style="color:red">&nbsp;Invalid Pin code</span>
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col" style="text-align:left">
+                <label>Contact Number</label>
+              </div>
+              <div class="col; input-group">
+                <input type="text" name="toContactNumber" #toContactNumber="ngModel" ngModel class="form-control qkinput" pattern="^[0-9]{10}$" maxlength="10" required>
+
+                <span *ngIf="toContactNumber.errors && (toContactNumber.dirty || toContactNumber.touched)" style="text-align:left; padding-top:5px; color:red;">
+                  <span [hidden]="!toContactNumber.errors.required">
+                    <span>&nbsp;Contact Number is mandatory</span>
+                  </span>
+                  <span [hidden]="!toContactNumber.errors.pattern">
+                    <span>&nbsp;Invalid Contact Number</span>
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col" style="text-align:left">
+                <span>Packing:</span>
+                <div class="col; input-group">
+                  <input type="checkbox" name="packing" #packing="ngModel" ngModel class="form-control qkinput">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col" style="text-align:left">
+                <label>Item Cost</label>
+              </div>
+              <div class="col; input-group">
+                <input type="number" name="itemCost" #itemCost="ngModel" ngModel class="form-control qkinput" required>
+                <span *ngIf="itemCost.errors && (itemCost.dirty || itemCost.touched)" style="text-align:left; padding-top:5px; color:red;">
+                  <span [hidden]="!itemCost.errors.required">
+                    <span style="color:red">&nbsp;Item Cost is mandatory</span>
+                  </span>
+                </span>
+                <span *ngIf="(itemCost.dirty || itemCost.touched)" style="text-align:left; padding-top:5px; color:red;">
+                  <span [hidden]="itemCost.value!=0">
+                    <span style="color:red">&nbsp;Cost cannot be Zero</span>
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="form-group" style="text-align:left">
+              <button type="button" class="btn" (click)="calculateApproximateCost(fromPincode.value,toPincode.value,weight.value,length.value,breadth.value,height.value,packing.value)">
+                Calculate Cost
+              </button> &nbsp;&nbsp;
+            </div>
+            <div *ngIf="flager">
+              <div class="form-group">
+                <div class="col" style="text-align:left">
+                  <label>Approx delivery charge: {{deliveryCharge | currency : 'INR'}}/-</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col" style="text-align:left">
+                <label style="color:green">Insurance will be applied for all the packages worth INR 1000 and above.</label>
+              </div>
+            </div>
+            <div class="form-group" style="text-align:left">
+              <button type="submit" [disabled]="!GetParcelForm.form.valid" class="btn">Schedule Pickup</button> &nbsp;&nbsp;
+              <a routerLink="/home">Cancel</a>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+

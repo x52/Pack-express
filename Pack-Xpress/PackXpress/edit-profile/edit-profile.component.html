@@ -1,0 +1,216 @@
+
+<div *ngIf="commonLayout">
+  <app-common-layout></app-common-layout>
+</div>
+<div *ngIf="customerLayout">
+  <app-customer-layout></app-customer-layout>
+</div>
+<div *ngIf="officerLayout">
+  <app-officer-layout></app-officer-layout>
+</div>
+<div class="myContent">
+  <div class="container">
+    <form #EditProfileForm="ngForm" (ngSubmit)="editProfile(EditProfileForm)">
+      <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+          <h4 style="text-align:center">Edit Profile</h4>
+          <h6 style="text-align:right;color:dimgrey;font-size:small">All fields are mandatory</h6>
+          <div class="form-group">
+            <div class="col" style="text-align:left">
+              <label>Name</label>
+            </div>
+            <div class="col; input-group">
+              <input type="text" name="name" #name="ngModel" ngModel [ngModel]="names" class="form-control qkinput" pattern="^[a-zA-Z ]*$" required>
+            </div>
+            <div *ngIf="name.errors && (name.dirty || name.touched)" style="text-align:left; padding-top:5px; color:red;">
+              <div [hidden]="!name.errors.required">
+                <p>&nbsp;Name is mandatory</p>
+              </div>
+              <div [hidden]="!name.errors.pattern">
+                <p>&nbsp;Invalid Name</p>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col" style="text-align:left">
+              <label>Email Id</label>
+            </div>
+            <div class="col; input-group">
+              <input type="text" name="emailId" #emailId="ngModel" ngModel [ngModel]="emailIds" class="form-control qkinput" required readonly>
+            </div>
+            <!--<div *ngIf="emailId.errors && (emailId.dirty || emailId.touched)" style="text-align:left; padding-top:5px; color:red;">
+              <div [hidden]="!emailId.errors.required">
+                <p>&nbsp;Email is mandatory</p>
+              </div>
+              <div [hidden]="!emailId.errors.pattern">
+                <p>&nbsp;Invalid Email</p>
+              </div>
+            </div>-->
+          </div>
+          <div class="form-group">
+            <div class="col" style="text-align:left">
+              <label>User Password</label>
+            </div>
+            <div class="col; input-group">
+              <input type="password" name="password" #password="ngModel" ngModel [ngModel]="passwords" class="form-control qkinput" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}" maxlength="16" minlength="8" required>
+            </div>
+            <div *ngIf="password.errors && (password.dirty || password.touched)" style="text-align:left; padding-top:5px; color:red;">
+              <div [hidden]="!password.errors.required">
+                <p>&nbsp;Password is mandatory</p>
+              </div>
+              <div [hidden]="!password.errors.pattern">
+                <p>&nbsp;Invalid Password</p>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col" style="text-align:left">
+              <label>Confirm Password</label>
+            </div>
+            <div class="col; input-group">
+              <input type="password" name="confirmPassword" #confirmPassword="ngModel" ngModel [ngModel]="passwords" class="form-control qkinput" maxlength="16" minlength="8" required>
+            </div>
+            <div *ngIf="(password.value!=confirmPassword.value)" style="color:red">
+              <p style="color:red">&nbsp;Confirm Password should be same as Password</p>
+            </div>
+            <div *ngIf="confirmPassword.errors && (confirmPassword.dirty || confirmPassword.touched)" style="text-align:left; padding-top:5px; color:red;">
+              <div [hidden]="!confirmPassword.errors.required">
+                <p>&nbsp;Confirm Password is mandatory</p>
+              </div>
+              <div [hidden]="!confirmPassword.errors.pattern">
+                <p>&nbsp;Invalid Password</p>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col" style="text-align:left">
+              <label>Contact Number</label>
+            </div>
+            <div class="col; input-group">
+              <input type="text" name="contactNumber" #contactNumber="ngModel" ngModel [ngModel]="contactNumbers" class="form-control qkinput" maxlength="10" pattern="^[1-9][0-9]{9}$"  required>
+            </div>
+            <div *ngIf="contactNumber.errors && (contactNumber.dirty || contactNumber.touched)" style="text-align:left; padding-top:5px; color:red;">
+              <div [hidden]="!contactNumber.errors.required" style="color:red">
+                <p style="color:red">&nbsp;Contact Number is mandatory</p>
+              </div>
+              <div [hidden]="!contactNumber.errors.pattern" style="color:red">
+                <p style="color:red">&nbsp;Invalid Contact Number</p>
+              </div>
+            </div>
+
+
+
+            <div>&nbsp;</div>
+            <div class="form-group" style="text-align:left">
+              <button type="submit" [disabled]="!EditProfileForm.form.valid" class="btn">Update Profile</button> &nbsp;&nbsp;
+              <a routerLink="/home">Cancel</a>
+            </div>
+            <div class="col; input-group">
+              <button title="addAddress"  (click)="addAddress()" class="btn">Add new Address</button>
+            </div>
+          </div>
+          <div class="col-md-4">
+          </div>
+        </div>
+      </div>
+    </form>
+    <div *ngFor="let address of addressList">
+      <div class="form-group">
+        <div class="col" style="text-align:left">
+          <label>Address</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col" style="text-align:left">
+          <label>Building Number</label>
+        </div>
+        <div class="col; input-group">
+          <input type="text" name="buildingNumber" #buildingNumber="ngModel" ngModel [ngModel]="address.buildingNo" class="form-control qkinput" pattern="^[a-zA-Z0-9 ]*$" required readonly>
+        </div>
+        <div *ngIf="buildingNumber.errors && (buildingNumber.dirty || buildingNumber.touched)" style="text-align:left; padding-top:5px; color:red;">
+          <div [hidden]="!buildingNumber.errors.required">
+            <p>&nbsp;Building Number is mandatory</p>
+          </div>
+          <div [hidden]="!buildingNumber.errors.pattern">
+            <p>&nbsp;Invalid Building Number</p>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col" style="text-align:left">
+          <label>Street Number</label>
+        </div>
+        <div class="col; input-group">
+          <input type="text" name="streetNumber" #streetNumber="ngModel" ngModel [ngModel]="address.streetNo" class="form-control qkinput" pattern="^[a-zA-Z0-9 ]*$" required readonly>
+        </div>
+        <div *ngIf="streetNumber.errors && (streetNumber.dirty || streetNumber.touched)" style="text-align:left; padding-top:5px; color:red;">
+          <div [hidden]="!streetNumber.errors.required">
+            <p>&nbsp;Street Number is mandatory</p>
+          </div>
+          <div [hidden]="!streetNumber.errors.pattern">
+            <p>&nbsp;Invalid Street Number</p>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col" style="text-align:left">
+          <label>Locality</label>
+        </div>
+        <div class="col; input-group">
+          <input type="text" name="locality" #locality="ngModel" ngModel [ngModel]="address.locality" class="form-control qkinput" pattern="^[a-zA-Z]*$" required readonly>
+        </div>
+        <!--<div *ngIf="locality.errors && (locality.dirty || locality.touched)" style="text-align:left; padding-top:5px; color:red;">
+          <div [hidden]="!locality.errors.required">
+            <p>&nbsp;Locality is mandatory</p>
+          </div>
+          <div [hidden]="!locality.errors.pattern">
+            <p>&nbsp;Invalid Locality</p>
+          </div>
+        </div>-->
+      </div>
+      <div class="form-group">
+        <div class="col" style="text-align:left">
+          <label>City</label>
+        </div>
+        <div class="col; input-group">
+          <input type="text" name="city" #city="ngModel" ngModel [ngModel]="address.city" class="form-control qkinput" pattern="^[a-zA-Z]*$" required readonly>
+        </div>
+        <div *ngIf="city.errors && (city.dirty || city.touched)" style="text-align:left; padding-top:5px; color:red;">
+          <div [hidden]="!city.errors.required">
+            <p>&nbsp;City is mandatory</p>
+          </div>
+          <div [hidden]="!city.errors.pattern">
+            <p>&nbsp;Invalid City</p>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col" style="text-align:left">
+          <label>Pin Code</label>
+        </div>
+        <div class="col; input-group">
+          <input type="number" name="pincode" #pincode="ngModel" ngModel [ngModel]="address.pincode" class="form-control qkinput" pattern="^[1-9][0-9]{5}$" required readonly>
+        </div>
+        <div *ngIf="pincode.errors && (pincode.dirty || pincode.touched)" style="text-align:left; padding-top:5px; color:red;">
+          <div [hidden]="!pincode.errors.required">
+            <p>&nbsp;Pin Code is mandatory</p>
+          </div>
+          <div [hidden]="!pincode.errors.pattern">
+            <p>&nbsp;Invalid Pin code</p>
+          </div>
+        </div>
+      </div>
+      <div class="col; input-group">
+        <button title="Edit" (click)="editAddress(address)" class="btn">EDIT</button>
+      </div>
+      <div>&nbsp;</div>
+      <div class="col; input-group">
+        <button title="Remove" (click)="confirmRemove(address)" class="btn">Remove</button>
+      </div>
+      <div>&nbsp;</div>
+    </div>
+  </div>
+</div>
+

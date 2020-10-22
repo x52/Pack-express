@@ -1,0 +1,75 @@
+<div *ngIf="commonLayout">
+  <app-common-layout></app-common-layout>
+</div>
+<div *ngIf="customerLayout">
+  <app-customer-layout></app-customer-layout>
+</div>
+<div *ngIf="officerLayout">
+  <app-officer-layout></app-officer-layout>
+</div>
+
+
+
+
+
+
+
+
+<div class="myContent">
+  <div class="container">
+    <form #CheckAvailabilityForm="ngForm" (ngSubmit)="checkAvailability(CheckAvailabilityForm)">
+      <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+          <h4 style="text-align:center">Check service Availability</h4>
+          <h6 style="text-align:right;color:dimgrey;font-size:small">All fields are mandatory</h6>
+          <div class="form-group">
+            <div class="col" style="text-align:left">
+              <label>Source Pin Code</label>
+            </div>
+            <div class="col; input-group">
+              <input type="text" name="sourcePinCode" #sourcePinCode="ngModel" ngModel class="form-control qkinput" pattern="^[1-9][0-9]{5}$" maxlength="6" required>
+            </div>
+            <div *ngIf="sourcePinCode.errors && (sourcePinCode.dirty || sourcePinCode.touched)" style="text-align:left; padding-top:5px; color:red;">
+              <div [hidden]="!sourcePinCode.errors.required">
+                <p style="color:red">&nbsp;Source Pincode is mandatory</p>
+              </div>
+              <div [hidden]="!sourcePinCode.errors.pattern">
+                <p style="color:red">&nbsp;Invalid Pincode</p>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col" style="text-align:left">
+              <label>Destination Pin Code</label>
+            </div>
+            <div class="col; input-group">
+              <input type="text" name="destinationPinCode" #destinationPinCode="ngModel" ngModel class="form-control qkinput" maxlength="6" pattern="^[1-9][0-9]{5}$" required>
+            </div>
+            <div *ngIf="(sourcePinCode.value==destinationPinCode.value) && (destinationPinCode.dirty || destinationPinCode.touched)" style="color:red">
+              <p style="color:red">&nbsp;Source and destination PinCode cannot be same</p>
+            </div>
+            <div *ngIf="destinationPinCode.errors && (destinationPinCode.dirty || destinationPinCode.touched)" style="text-align:left; padding-top:5px; color:red;">
+              <div [hidden]="!destinationPinCode.errors.required">
+                <p style="color:red">&nbsp;Destination PinCode is mandatory</p>
+              </div>
+              <div [hidden]="!destinationPinCode.errors.pattern">
+                <p style="color:red">&nbsp;Invalid Pincode</p>
+              </div>
+            </div>
+          </div>
+          <div class="form-group" style="text-align:left">
+            <button type="submit" [disabled]="!CheckAvailabilityForm.form.valid" class="btn">Check Availability</button> &nbsp;&nbsp;
+            <a routerLink="/home">Cancel</a>
+          </div>
+          <div class="form-group" style="text-align:left">
+            <div *ngIf="flag">
+              <p style="color:green">&nbsp;Service is Available</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

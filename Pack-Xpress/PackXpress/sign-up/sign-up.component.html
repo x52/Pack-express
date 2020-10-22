@@ -1,0 +1,225 @@
+
+
+<div *ngIf="commonLayout">
+  <app-common-layout></app-common-layout>
+</div>
+<div *ngIf="customerLayout">
+  <app-customer-layout></app-customer-layout>
+</div>
+<div *ngIf="officerLayout">
+  <app-officer-layout></app-officer-layout>
+</div>
+
+
+
+
+
+
+
+
+<div class="myContent">
+  <div class="container-fluid">
+    <form #RegisterUserForm="ngForm"  (ngSubmit)="addUser(RegisterUserForm)">
+      <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+          <h4 style="text-align:center">Sign Up</h4>
+          <h6 style="text-align:right;color:dimgrey;font-size:small">All fields are mandatory</h6>
+          <div class="form-group">
+            <div class="col" style="text-align:left">
+              <label>Name</label>
+            </div>
+            <div class="col; input-group">
+              <input type="text" name="name" #name="ngModel" ngModel class="form-control qkinput" pattern="^[a-zA-Z ]*$" required>
+
+              <span *ngIf="name.errors && (name.dirty || name.touched)" style="text-align:left; padding-top:5px; color:red;">
+                <span [hidden]="!name.errors.required">
+                  <span style="color:red">&nbsp;Name is mandatory</span>
+                </span>
+                <span [hidden]="!name.errors.pattern">
+                  <span style="color:red">&nbsp;Invalid Name</span>
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col" style="text-align:left">
+              <label>Email Id</label>
+            </div>
+            <div class="col; input-group">
+              <input type="text" name="emailId" #emailId="ngModel" ngModel class="form-control qkinput" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" required>
+            
+              <span *ngIf="emailId.errors && (emailId.dirty || emailId.touched)" style="text-align:left; padding-top:5px; color:red;">
+                <span [hidden]="!emailId.errors.required">
+                  <span style="color:red">&nbsp;Email is mandatory</span>
+                </span>
+                <span [hidden]="!emailId.errors.pattern">
+                  <span style="color:red">&nbsp;Invalid Email</span>
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col" style="text-align:left">
+              <label>User Password</label>
+            </div>
+            <div class="col; input-group">
+              <input type="password" name="password" #password="ngModel" ngModel class="form-control qkinput" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}" maxlength="16" minlength="8" required>
+            
+              <span *ngIf="password.errors && (password.dirty || password.touched)" style="text-align:left; padding-top:5px; color:red;">
+                <span [hidden]="!password.errors.required">
+                  <span style="color:red">&nbsp;Password is mandatory</span>
+                </span>
+                <span [hidden]="!password.errors.pattern">
+                  <span style="color:red">&nbsp;Invalid Password</span>
+                </span>
+              </span>
+              <div style="text-align:left; padding-top:5px;">Password must contain atleast one Lower case,Upper case,Numeric and Special charecter</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col" style="text-align:left">
+              <label>Confirm Password</label>
+            </div>
+            <div class="col; input-group">
+              <input type="password" name="confirmPassword" #confirmPassword="ngModel" ngModel class="form-control qkinput" maxlength="16" minlength="8" required>
+            
+            <span *ngIf="(password.value!=confirmPassword.value) && (confirmPassword.dirty || confirmPassword.touched)" style="color:red">
+              <span style="color:red">&nbsp;Confirm Password should be same as Password</span>
+            </span>
+            <span *ngIf="confirmPassword.errors && (confirmPassword.dirty || confirmPassword.touched)" style="text-align:left; padding-top:5px; color:red;">
+              <span [hidden]="!confirmPassword.errors.required">
+                <span style="color:red">&nbsp;Confirm Password is mandatory</span>
+              </span>
+              <span [hidden]="!confirmPassword.errors.pattern">
+                <span style="color:red">&nbsp;Invalid Password</span>
+              </span>
+            </span>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col" style="text-align:left">
+              <label>Contact Number</label>
+            </div>
+            <div class="col; input-group">
+              <input type="text" name="contactNumber" #contactNumber="ngModel" ngModel class="form-control qkinput" pattern="^[1-9][0-9]{9}$" maxlength="10" required>
+            
+              <span *ngIf="contactNumber.errors && (contactNumber.dirty || contactNumber.touched)" style="text-align:left; padding-top:5px; color:red;">
+                <span [hidden]="!contactNumber.errors.required">
+                  <span>&nbsp;Contact Number is mandatory</span>
+                </span>
+                <span [hidden]="!contactNumber.errors.pattern">
+                  <span>&nbsp;Invalid contact number</span>
+                </span>
+              </span>
+            </div>
+          </div>
+
+
+          <div class="form-group">
+            <div class="col" style="text-align:left">
+              <label>Building Number</label>
+            </div>
+            <div class="col; input-group">
+              <input type="text" name="buildingNumber" #buildingNumber="ngModel" ngModel class="form-control qkinput" pattern="^[a-zA-Z0-9 ]*$" required>
+
+              <span *ngIf="buildingNumber.errors && (buildingNumber.dirty || buildingNumber.touched)" style="text-align:left; padding-top:5px; color:red;">
+                <span [hidden]="!buildingNumber.errors.required">
+                  <span style="color:red">&nbsp;Building Number is mandatory</span>
+                </span>
+                <span [hidden]="!buildingNumber.errors.pattern">
+                  <span style="color:red">&nbsp;Invalid Building Number</span>
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col" style="text-align:left">
+              <label>Street Number</label>
+            </div>
+            <div class="col; input-group">
+              <input type="text" name="streetNumber" #streetNumber="ngModel" ngModel class="form-control qkinput" pattern="^[a-zA-Z0-9 ]*$" required>
+
+              <span *ngIf="streetNumber.errors && (streetNumber.dirty || streetNumber.touched)" style="text-align:left; padding-top:5px; color:red;">
+                <span [hidden]="!streetNumber.errors.required">
+                  <span style="color:red">&nbsp;Street Number is mandatory</span>
+                </span>
+                <span [hidden]="!streetNumber.errors.pattern">
+                  <span style="color:red">&nbsp;Invalid Street Number</span>
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col" style="text-align:left">
+              <label>Locality</label>
+            </div>
+            <div class="col; input-group">
+              <input type="text" name="locality" #locality="ngModel" ngModel class="form-control qkinput" pattern="^[a-zA-Z ]*$" required>
+            
+              <span *ngIf="locality.errors && (locality.dirty || locality.touched)" style="text-align:left; padding-top:5px; color:red;">
+                <span [hidden]="!locality.errors.required">
+                  <span style="color:red">&nbsp;Locality is mandatory</span>
+                </span>
+                <span [hidden]="!locality.errors.pattern">
+                  <p style="color:red">&nbsp;Invalid Locality</p>
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col" style="text-align:left">
+              <label>City</label>
+            </div>
+            <div class="col; input-group">
+              <input type="text" name="city" #city="ngModel" ngModel class="form-control qkinput" pattern="^[a-zA-Z]*$" required>
+
+              <span *ngIf="city.errors && (city.dirty || city.touched)" style="text-align:left; padding-top:5px; color:red;">
+                <span [hidden]="!city.errors.required">
+                  <span style="color:red">&nbsp;City is mandatory</span>
+                </span>
+                <span [hidden]="!city.errors.pattern">
+                  <span style="color:red">&nbsp;Invalid City</span>
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col" style="text-align:left">
+              <label>Pin Code</label>
+            </div>
+            <div class="col; input-group">
+              <input type="text" name="pincode" #pincode="ngModel" ngModel class="form-control qkinput" pattern="^[1-9][0-9]{5}$" maxlength="6" required>
+            
+              <span *ngIf="pincode.errors && (pincode.dirty || pincode.touched)" style="text-align:left; padding-top:5px; color:red;">
+                <span [hidden]="!pincode.errors.required">
+                  <span style="color:red">&nbsp;Pin Code is mandatory</span>
+                </span>
+                <span [hidden]="!pincode.errors.pattern">
+                  <span style="color:red">&nbsp;Invalid Pin code</span>
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="form-group" style="text-align:left">
+            <button type="submit" [disabled]="!RegisterUserForm.form.valid" class="btn">Add</button> &nbsp;&nbsp;
+            <a routerLink="/home">Cancel</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+

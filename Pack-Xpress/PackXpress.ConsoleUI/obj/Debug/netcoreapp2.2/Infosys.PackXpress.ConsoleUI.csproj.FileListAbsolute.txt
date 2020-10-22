@@ -1,0 +1,57 @@
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\bin\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.deps.json
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\bin\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.runtimeconfig.json
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\bin\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.runtimeconfig.dev.json
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\bin\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.dll
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\obj\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.csprojAssemblyReference.cache
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\obj\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.csproj.CoreCompileInputs.cache
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\obj\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.AssemblyInfoInputs.cache
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\obj\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.AssemblyInfo.cs
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\bin\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.pdb
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\obj\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.dll
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\obj\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.pdb
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\bin\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.dll
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\bin\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.pdb
+C:\Users\Ritesh Sharma\Desktop\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\obj\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.csproj.CopyComplete
+C:\Users\Ashut\OneDrive\Documents\f4 vg\Infosys.PackXpress - Copy\Infosys.PackXpress.ConsoleUI\bin\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.deps.json
+C:\Users\Ashut\OneDrive\Documents\f4 vg\Infosys.PackXpress - Copy\Infosys.PackXpress.ConsoleUI\bin\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.runtimeconfig.json
+C:\Users\Ashut\OneDrive\Documents\f4 vg\Infosys.PackXpress - Copy\Infosys.PackXpress.ConsoleUI\bin\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.runtimeconfig.dev.json
+C:\Users\Ashut\OneDrive\Documents\f4 vg\Infosys.PackXpress - Copy\Infosys.PackXpress.ConsoleUI\bin\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.dll
+C:\Users\Ashut\OneDrive\Documents\f4 vg\Infosys.PackXpress - Copy\Infosys.PackXpress.ConsoleUI\bin\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.pdb
+C:\Users\Ashut\OneDrive\Documents\f4 vg\Infosys.PackXpress - Copy\Infosys.PackXpress.ConsoleUI\bin\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.dll
+C:\Users\Ashut\OneDrive\Documents\f4 vg\Infosys.PackXpress - Copy\Infosys.PackXpress.ConsoleUI\bin\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.pdb
+C:\Users\Ashut\OneDrive\Documents\f4 vg\Infosys.PackXpress - Copy\Infosys.PackXpress.ConsoleUI\obj\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.csprojAssemblyReference.cache
+C:\Users\Ashut\OneDrive\Documents\f4 vg\Infosys.PackXpress - Copy\Infosys.PackXpress.ConsoleUI\obj\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.csproj.CoreCompileInputs.cache
+C:\Users\Ashut\OneDrive\Documents\f4 vg\Infosys.PackXpress - Copy\Infosys.PackXpress.ConsoleUI\obj\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.AssemblyInfoInputs.cache
+C:\Users\Ashut\OneDrive\Documents\f4 vg\Infosys.PackXpress - Copy\Infosys.PackXpress.ConsoleUI\obj\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.AssemblyInfo.cs
+C:\Users\Ashut\OneDrive\Documents\f4 vg\Infosys.PackXpress - Copy\Infosys.PackXpress.ConsoleUI\obj\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.csproj.CopyComplete
+C:\Users\Ashut\OneDrive\Documents\f4 vg\Infosys.PackXpress - Copy\Infosys.PackXpress.ConsoleUI\obj\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.dll
+C:\Users\Ashut\OneDrive\Documents\f4 vg\Infosys.PackXpress - Copy\Infosys.PackXpress.ConsoleUI\obj\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.pdb
+D:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\bin\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.deps.json
+D:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\bin\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.runtimeconfig.json
+D:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\bin\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.runtimeconfig.dev.json
+D:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\bin\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.dll
+D:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\bin\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.pdb
+D:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\bin\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.dll
+D:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\bin\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.pdb
+D:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\obj\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.csprojAssemblyReference.cache
+D:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\obj\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.csproj.CoreCompileInputs.cache
+D:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\obj\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.AssemblyInfoInputs.cache
+D:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\obj\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.AssemblyInfo.cs
+D:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\obj\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.csproj.CopyComplete
+D:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\obj\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.dll
+D:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\obj\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.pdb
+Z:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\bin\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.deps.json
+Z:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\bin\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.runtimeconfig.json
+Z:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\bin\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.runtimeconfig.dev.json
+Z:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\bin\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.dll
+Z:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\bin\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.pdb
+Z:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\bin\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.dll
+Z:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\bin\Debug\netcoreapp2.2\Infosys.PackXpress.DAL.pdb
+Z:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\obj\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.csprojAssemblyReference.cache
+Z:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\obj\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.csproj.CoreCompileInputs.cache
+Z:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\obj\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.AssemblyInfoInputs.cache
+Z:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\obj\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.AssemblyInfo.cs
+Z:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\obj\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.csproj.CopyComplete
+Z:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\obj\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.dll
+Z:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\obj\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.pdb
+Z:\FA4_Project\Infosys.PackXpress\Infosys.PackXpress.ConsoleUI\obj\Debug\netcoreapp2.2\Infosys.PackXpress.ConsoleUI.genruntimeconfig.cache
